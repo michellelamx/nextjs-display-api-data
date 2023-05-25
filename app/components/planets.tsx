@@ -82,9 +82,7 @@ export default function StarWarsPlanets() {
           <div className='breadcrumb-nav'>
             <div className='previous-link'>
               {previousLink === null ? (
-                <button disabled className='previous-button'>
-                  Previous Page
-                </button>
+                <div />
               ) : (
                 <button type='button' className='previous-button' onClick={() => callBreadcrumbLink(previousLink)}>
                   Previous Page
@@ -93,9 +91,7 @@ export default function StarWarsPlanets() {
             </div>
             <div className='next-link'>
               {nextLink === null ? (
-                <button type='button' disabled className='next-button'>
-                  Next Page
-                </button>
+                <div />
               ) : (
                 <button type='button' className='next-button' onClick={() => callBreadcrumbLink(nextLink)}>
                   Next Page

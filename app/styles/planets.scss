@@ -36,22 +36,22 @@ main {
 }
 
 button {
-  background: #FFFFFF;
-  border: 1px solid #000000;
+  background: #ffffff;
+  border: 0.1rem solid #000000;
   border-radius: 1rem;
   color: #000000;
   padding: 0.8rem 1.2rem;
 }
 
 button:hover {
-  background: #000000;
+  background-color: #000000;
   color: #ffffff;
   cursor: pointer;
 }
 
 button:disabled {
-  border: 0.1rem solid #cdcdcd;
   background-color: #cdcdcd;
+  border: 0.1rem solid #cdcdcd;
   color: #222222;
   pointer-events: none;
 }
