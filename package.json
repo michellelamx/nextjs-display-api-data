@@ -1,12 +1,12 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
+  "name": "nextjs-display-data-from-api",
+  "version": "1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev && lint",
+    "build": "next build && lint",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "echo 'Linting CSS...' && stylelint --max-warnings=0 'src/**/*.{css,scss}'"
   },
   "dependencies": {
     "eslint": "8.40.0",
@@ -14,5 +14,12 @@
     "next": "13.4.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.3",
+    "@types/react": "18.2.7",
+    "postcss-scss": "^4.0.6",
+    "sass": "^1.62.1",
+    "stylelint": "^15.6.2"
   }
 }

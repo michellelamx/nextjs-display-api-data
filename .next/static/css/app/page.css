@@ -1,0 +1,58 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[14].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[14].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[2].oneOf[14].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[2].oneOf[14].use[5]!./app/styles/planets.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+main {
+  display: grid;
+  grid-template-columns: minmax(max-content, 108rem);
+  justify-content: center;
+}
+
+.planets-wrapper {
+  border: 0.1rem solid #848884;
+  margin-top: 5rem;
+  padding-inline: 1.5rem;
+}
+
+.data-row,
+.header-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 1.5rem;
+}
+
+.header-row {
+  border-bottom: 0.2rem solid #848884;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.data-row + .data-row {
+  border-top: 0.1rem solid #848884;
+}
+
+.breadcrumb-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0;
+}
+
+button {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 1rem;
+  color: #000000;
+  padding: 0.8rem 1.2rem;
+}
+
+button:hover {
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:disabled {
+  border: 0.1rem solid #cdcdcd;
+  background-color: #cdcdcd;
+  color: #222222;
+  pointer-events: none;
+}
