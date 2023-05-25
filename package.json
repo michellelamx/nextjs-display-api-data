@@ -6,7 +6,8 @@
     "dev": "next dev && lint:css",
     "build": "next build && lint:css",
     "start": "next start",
-    "lint:css": "echo 'Linting CSS...' && stylelint --max-warnings=0 'src/**/*.{css,scss}'"
+    "lint:css": "echo 'Linting CSS...' && stylelint --max-warnings=0 'src/**/*.{css,scss}'",
+    "lint": "next lint"
   },
   "dependencies": {
     "eslint": "8.40.0",
