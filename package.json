@@ -3,10 +3,9 @@
   "version": "1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev && lint:css",
-    "build": "next build && lint:css",
+    "dev": "next dev",
+    "build": "next build && stylelint \"**/*.scss\"",
     "start": "next start",
-    "lint:css": "echo 'Linting CSS...' && stylelint --max-warnings=0 'src/**/*.{css,scss}'",
     "lint": "next lint"
   },
   "dependencies": {
@@ -21,7 +20,6 @@
     "@types/react": "18.2.7",
     "postcss-scss": "^4.0.6",
     "sass": "^1.62.1",
-    "stylelint": "^15.6.2",
     "stylelint-config-sass-guidelines": "^10.0.0",
     "stylelint-order": "^6.0.3",
     "stylelint-webpack-plugin": "^4.1.1"
